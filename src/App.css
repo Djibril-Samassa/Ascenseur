@@ -1,38 +1,122 @@
+@font-face {
+  font-family: "Segment";
+  src: url("../public/seven/Seven\ Segment.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins/Poppins-Regular.ttf");
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  font-family: "Poppins";
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  margin: 2em auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ascenseur {
+  height: 60vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #4e4a4a;
+}
+
+.afficheur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  margin: 1em auto;
+  width: 10%;
+  padding: 20px;
+  background-color: #1250a7;
+  font-family: "Segment";
+}
+
+.line {
+  padding: 2px;
+  background-color: #2d2a2a;
+}
+
+.porte {
+  height: 95%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ouvert {
+  background-color: rgb(190, 233, 190);
+  width: 90%;
+  height: 9;
+  display: flex;
+  justify-content: center;
+}
+
+.ferme {
+  background-color: #4e4a4a;
+  display: flex;
+  justify-content: center;
+}
+
+.ferme>span {
+  padding: 2px;
+  background-color: #2d2a2a;
+}
+
+.buttons {
+  width: 100%;
+  padding: 10px;
+  height: fit-content;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  max-height: 40vh;
+}
+
+.buttons>span {
+  font-family: "Segment";
+  background-color: #b2acac;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 30%;
+  border: 2px solid #f1f1f1;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.buttons>span:hover {
+  background-color: #f1f1f1;
+  color: #1250a7;
+  cursor: pointer;
+}
+
+.liens{
+  width: 30%;
+  margin: 0 auto;
+}
+
+.liens>nav>li>a {
+  text-decoration: none;
+  color: rgb(236, 236, 236);
+}
+
+.liens>nav>li>a:hover {
+  color: rgb(111, 176, 198);
+  text-decoration: none;
+}
+
+li {
+  font-size: 1em;
 }
